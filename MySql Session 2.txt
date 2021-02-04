@@ -1,0 +1,249 @@
+create table employee(eno int not null,ename varchar(20),age int,occupation varchar(20),PRIMARY KEY(eno));
+
+alter table employee add column(location varchar(20));
+describe employee;
+insert into employee values(101,'Jyoti',35,'Assistant Professor','Sangli');
+insert into employee values(102,'Yogesh',35,'IT Manager','Pune');
+select * from employee;
+update employee set location='Chennai' where eno=101;
+select * from employee;
+
+
+
+
+create table departments(deptno,deptname,location)
+alter tableby adding a column(eno)
+insert 10 records in the table
+
+create table departments(deptno int,deptname varchar(20),location varchar(20));
+ alter table departments add column(eno int);
+ insert into departments values(2,'computer','maha',2);
+ insert into departments values(1,'elect','maha',2);
+ insert into departments values(3,'computer','maha',2);
+ insert into departments values(4,'EC','maha',2);
+ insert into departments values(5,'computer','maha',2);
+ insert into departments values(6,'computer','maha',2);
+ insert into departments values(7,'computer','maha',2);
+ insert into departments values(8,'maths','maha',2);
+ insert into departments values(9,'IT','maha',2);
+ insert into departments values(10,'computer','maha',2);
+ select * from departments;
+ describe departments;
+
+
+create table departments1(deptno int,deptname varchar(20),location varchar(20));
+alter table departments1 add column(eno int);
+insert into departments1 values(1,'A','Delhi',1);
+insert into departments1 values(2,'B','Delhi',1);
+insert into departments1 values(3,'C','Delhi',1);
+insert into departments1 values(4,'D','Delhi',1);
+insert into departments1 values(5,'E','Delhi',1);
+insert into departments1 values(6,'F','Delhi',1);
+insert into departments1 values(7,'G','Delhi',1);
+insert into departments1 values(8,'H','Delhi',1);
+insert into departments1 values(9,'I','Delhi',1);
+insert into departments values(10,'J','Delhi',1);
+select * from departments1;
+describe departments1;
+select deptno,location from departments1;
+describe departments1;
+select deptno,location from departments1 where deptname='J';
+describe departments1;
+                       
+
+
+create table departments2(deptno int,deptname varchar(20),location varchar(20));
+describe departments2;
+alter table departments2 add column doj Date;
+describe departments2;
+insert into departments2 values(10,'HR','Hyd','2020-11-29');
+insert into departments2 values(11,'IT','Hyd','2020-11-28');
+insert into departments2 values(12,'Sells','Hyd','2020-11-27');
+insert into departments2 values(13,'Network','Hyd','2020-11-26');
+insert into departments2 values(14,'Testing','Hyd','2020-11-25');
+select * from departments2;
+
+
+create table departments2(deptno int,deptname varchar(20),location varchar(20));
+describe departments2;
+alter table departments2 add column doj Date;
+describe departments2;
+insert into departments2 values(10,'HR','Hyd','2020-11-29');
+insert into departments2 values(11,'IT','Hyd','2020-11-28');
+insert into departments2 values(12,'Sells','Hyd','2020-11-27');
+insert into departments2 values(13,'Network','Hyd','2020-11-26');
+insert into departments2 values(14,'Testing','Hyd','2020-11-25');
+select deptname,location,deptno from departments2 order by deptno; 
+
+
+create table departments2(deptno int,deptname varchar(20),location varchar(20));
+describe departments2;
+alter table departments2 add column doj Date;
+describe departments2;
+insert into departments2 values(10,'HR','Hyd','2020-11-29');
+insert into departments2 values(11,'IT','Hyd','2020-11-28');
+insert into departments2 values(12,'Sells','Hyd','2020-11-27');
+insert into departments2 values(13,'Network','Hyd','2020-11-26');
+insert into departments2 values(14,'Testing','Hyd','2020-11-25');
+select deptname,location,deptno from departments2 order by deptno desc;
+
+
+
+create table departments2(deptno int,deptname varchar(20),location varchar(20));
+describe departments2;
+alter table departments2 add column doj Date;
+describe departments2;
+insert into departments2 values(10,'HR','Hyd','2020-11-29');
+insert into departments2 values(11,'IT','Hyd','2020-11-28');
+insert into departments2 values(12,'Sells','Hyd','2020-11-27');
+insert into departments2 values(13,'Network','Hyd','2020-11-26');
+insert into departments2 values(14,'Testing','Hyd','2020-11-25');
+select deptname,location,deptno from departments2 order by deptno; 
+
+select deptname,location,deptno from departments2 order by deptno desc;
+rename table departments2 to deptnew;
+select * from deptnew;
+
+
+
+create table departments2(deptno int,deptname varchar(20),location varchar(20));
+describe departments2;
+alter table departments2 add column doj Date;
+describe departments2;
+insert into departments2 values(10,'HR','Hyd','2020-11-29');
+insert into departments2 values(11,'IT','Hyd','2020-11-28');
+insert into departments2 values(12,'Sells','Hyd','2020-11-27');
+insert into departments2 values(13,'Network','Hyd','2020-11-26');
+insert into departments2 values(14,'Testing','Hyd','2020-11-25');
+select deptname,location,deptno from departments2 order by deptno desc;
+rename table departments2 to deptnew;
+select * from deptnew;
+                               
+
+create table departments2(deptno int,deptname varchar(20),location varchar(20));
+describe departments2;
+alter table departments2 add column doj Date;
+describe departments2;
+insert into departments2 values(10,'HR','Hyd','2020-11-29');
+insert into departments2 values(11,'IT','Hyd','2020-11-28');
+insert into departments2 values(12,'Sells','Hyd','2020-11-27');
+insert into departments2 values(13,'Network','Hyd','2020-11-26');
+insert into departments2 values(14,'Testing','Hyd','2020-11-25');
+select deptname,location,deptno from departments2 order by deptno desc;
+rename table departments2 to deptnew;
+select * from deptnew;
+delete from deptnew where deptno=10;
+select * from deptnew;
+
+
+create table student(studno int,studname varchar(10),rollno int);                                                         describe student;
+
+
+create table student(studno int,studname varchar(10),rollno int);                                                         describe student;
+drop table student; 
+select * from student;
+
+
+
+create table employee(eno int not null,ename varchar(20),age int,occupation varchar(20),PRIMARY KEY(eno));
+insert into employee values(11,'abc',34,'developer');
+insert into employee values(12,'abc1',30,'developer'); 
+insert into employee values(13,'abc',35,'datascientists');
+insert into employee values(14,'abc',37,'developer');
+select * from employee;                                   
+select occupation from employee group by occupation;
+                                             
+
+
+
+# on editor side queries:-
+
+create table employee(eno int not null,ename varchar(20),age int,occupation varchar(20),PRIMARY KEY(eno));
+
+alter table employee add column(location varchar(20));
+describe employee;
+insert into employee values(101,'Jyoti',35,'Assistant Professor','Sangli');
+insert into employee values(102,'Yogesh',35,'IT Manager','Pune');
+select * from employee;
+update employee set location='Chennai' where eno=101;
+select * from employee;
+
+create table departments(deptno int,deptname varchar(20),location varchar(20));
+ alter table departments add column(eno int);
+ insert into departments values(2,'computer','maha',2);
+ insert into departments values(1,'elect','maha',2);
+ insert into departments values(3,'computer','maha',2);
+ insert into departments values(4,'EC','maha',2);
+ insert into departments values(5,'computer','maha',2);
+ insert into departments values(6,'computer','maha',2);
+ insert into departments values(7,'computer','maha',2);
+ insert into departments values(8,'maths','maha',2);
+ insert into departments values(9,'IT','maha',2);
+ insert into departments values(10,'computer','maha',2);
+ select * from departments;
+ describe departments;
+
+create table departments1(deptno int,deptname varchar(20),location varchar(20));
+alter table departments1 add column(eno int);
+insert into departments1 values(1,'A','Delhi',1);
+insert into departments1 values(2,'B','Delhi',1);
+insert into departments1 values(3,'C','Delhi',1);
+insert into departments1 values(4,'D','Delhi',1);
+insert into departments1 values(5,'E','Delhi',1);
+insert into departments1 values(6,'F','Delhi',1);
+insert into departments1 values(7,'G','Delhi',1);
+insert into departments1 values(8,'H','Delhi',1);
+insert into departments1 values(9,'I','Delhi',1);
+insert into departments values(10,'J','Delhi',1);
+select * from departments1;
+describe departments1;
+select deptno,location from departments1;
+describe departments1;
+select deptno,location from departments1 where deptname='J';
+describe departments1;
+
+create table departments3(deptno int,deptname varchar(20),location varchar(20));
+describe departments3;
+alter table departments3 add column doj Date;
+describe departments3;
+insert into departments3 values(10,'HR','Hyd','2020-11-29');
+insert into departments3 values(11,'IT','Hyd','2020-11-28');
+insert into departments3 values(12,'Sells','Hyd','2020-11-27');
+insert into departments3 values(13,'Network','Hyd','2020-11-26');
+insert into departments3 values(14,'Testing','Hyd','2020-11-25');
+#select * from departments3;
+#select deptname,location,deptno from departments3 order by deptno; 
+select deptname,location,deptno from departments3 order by deptno desc;
+                                                                           
+create table departments2(deptno int,deptname varchar(20),location varchar(20));
+describe departments2;
+alter table departments2 add column doj Date;
+describe departments2;
+insert into departments2 values(10,'HR','Hyd','2020-11-29');
+insert into departments2 values(11,'IT','Hyd','2020-11-28');
+insert into departments2 values(12,'Sells','Hyd','2020-11-27');
+insert into departments2 values(13,'Network','Hyd','2020-11-26');
+insert into departments2 values(14,'Testing','Hyd','2020-11-25');
+select deptname,location,deptno from departments2 order by deptno desc;
+rename table departments2 to deptnew;
+select * from deptnew;
+delete from deptnew where deptno=10;
+select * from deptnew;
+                                                                           
+create table student(studno int,studname varchar(10),rollno int);                                                                  
+describe student;
+#drop table student; 
+select * from student;  
+
+create table employee3(eno int not null,ename varchar(20),age int,occupation varchar(20),PRIMARY KEY(eno));
+insert into employee3 values(11,'abc',34,'developer');
+insert into employee3 values(12,'abc1',30,'developer'); 
+insert into employee3 values(13,'abc',35,'datascientists');
+insert into employee3 values(14,'abc',37,'developer');
+select * from employee3;                                 
+select occupation from employee3 group by occupation;
+       
+                                                                          
+
+
+                                          
